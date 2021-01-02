@@ -1,0 +1,16 @@
+@import "~bootstrap/dist/css/bootstrap.css"
+
+ .button{
+    margin-top: 4%;
+   margin-left: 50%;
+   width: 100px;
+  }
+  .custom-file{
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 50%;
+  }
+ 
+  .container {
+  margin-top: 7rem !important;
+}

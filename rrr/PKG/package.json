@@ -1,0 +1,12 @@
+{
+  "name": "prettyprint",
+  "version": "1.0.0",
+  "description": "json file",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "bin.js", 
+  "author": "anybody",
+  "license": "MIT"
+}

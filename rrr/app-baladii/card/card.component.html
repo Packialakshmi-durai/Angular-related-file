@@ -1,0 +1,23 @@
+<button type="button" class="btn btn-primary" (click)="but()">CLICK</button>
+<input type="text" name="num" [(ngModel)]="num">
+<div class="card">
+    <div class="row">
+        <div class="col-sm-3" *ngFor="let i of arr">
+                <div class="card">
+                    <div class="card-header">My header
+                        <div class="card-body">
+                            <p *ngIf="i.debamnt!=undefined">Debited</p>
+                            <p *ngIf="i.debamnt!=undefined">{{i.debamnt}}</p>
+                            <p *ngIf="i.debamnt!=undefined">{{i.date | date:'dd/mm/yyyy'}}</p>
+                            <p *ngIf="i.creamnt!=undefined">credit</p>
+                            <p *ngIf="i.creamnt!=undefined" class="align-right">{{i.creamnt}}</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="n==true else elsepart">i am true</div>
+<ng-template #elsepart>I am on false mode</ng-template>
+<app-lifecycle [lifecompo]="num"></app-lifecycle>

@@ -1,0 +1,79 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+h1{
+    text-align: center;
+}
+body{
+    padding-top: 35px;;
+}
+
+input, label {
+    display:block;
+}
+
+.card{
+    height: 278px;
+}
+.pacs-float-extra{
+    float:left;
+    margin-right:200px;
+    padding-left: 12px;
+}
+
+.pacs-float{
+    float:left;
+    margin-right:25px
+}
+.button{
+    float:left;
+    margin-left: 480px;
+    padding-top: 20px;
+}
+.button1{
+    float: left;
+    margin-left: 59px;
+    padding-top: 22px;
+}
+
+.card-body{
+   float: left;
+
+}
+.card-columns{
+width: 57%;
+height: 50px;
+margin-left: 14px;
+margin-top: 12px;
+}
+.row{
+    margin-top: 13px;
+    padding-left: 1px;
+}
+.card{
+    height: 110px;
+    margin-left: 19px;
+}
+
+.margin-card{
+    margin: 5px 0px 5px 0px
+}
+.mycss{
+margin: 4px 14px 9px 10px;
+width: 78px;
+}
+.cls{
+    margin: -1px;
+    margin-top: 2px;
+}
+
+.card-css{
+  
+    margin-top: 10px;
+    margin-left: 68px;
+}
+
+
+.card-title{
+    width: 534px;
+}

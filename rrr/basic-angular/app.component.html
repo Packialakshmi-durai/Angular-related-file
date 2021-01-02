@@ -1,0 +1,69 @@
+<html>
+<header></header>
+
+<body>
+  <h1>Ledger Account</h1>
+  <div class="container">
+    <div class="row">
+      <form>
+        <div class="pacs-float-extra">
+          <label for=bal>Balance Amount</label>
+          <input type="text" name="num" [(ngModel)]="num">
+        </div>
+        <div class="pacs-float">
+          <label for=reason>Reason for Debit/Creadit</label>
+          <input type="text" name="reason" [(ngModel)]="do">
+        </div>
+        <div class="pacs-float">
+          <label for=amount>Amount</label>
+          <input type="text" name="amount" [(ngModel)]="paisa">
+        </div>
+        <div class="button">
+          <button type="button" class="btn btn-primary cls" (click)="debit()">Debit</button>
+        </div>
+        <div class="button1">
+          <button type="button" class="btn btn-primary" (click)="credit()">Credit</button>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <button type="button" name="all" class="btn btn-primary mycss" (click)="all()">All</button>
+      <button type="button" name="spents" class="btn btn-primary mycss"(click)="spents()">Spents</button>
+      <button type="button" name="receive" class="btn btn-primary mycss"(click)="receive()">Receive</button>
+    </div>
+    <div class="row">
+      <div *ngIf ="call=='debitonly'">
+        <div class="row p-3">
+          <div *ngFor="let number of debArray" class="col-md-4 ">
+            <div class="card margin-card">
+              <p class="card-title">Balance Amount:{{number.mainAmount}}</p>
+             <p>jlksjfiowe</p>
+              <div class="card-text card-css">
+                <p>1hhhh</p>
+               
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <div *ngIf ="call=='creonly'">
+        <div class="row p-3">
+          <div *ngFor="let number of crearray" class="col-md-4 ">
+            <div class="card margin-card">
+              <p class="card-title">Balance Amount:{{number.mainAmount}}</p>
+             <p>jlksjfiowe</p>
+              <div class="card-text card-css">
+                <p>1hhhh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<router-outlet></router-outlet>
